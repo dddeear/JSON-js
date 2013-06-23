@@ -1,0 +1,2010 @@
+{
+    "manifest":{
+        "name":"Cony",
+        "schemaVersion":1,
+        "revision":1,
+        "provider":{
+            "name":"LINE Corporation",
+            "url":"http://www.linecorp.com"
+        }
+    },
+    "view.common":{
+        "DefaultTextColor":"#616D7E",
+        "TableViewBackgroundColor":"#ffffff",
+        "TableViewCellBackgroundColor":"#ffffff",
+        "TableViewPressedBackgroundColor":"#B7CEEC",
+        "TableViewSelectedBackgroundColor":"#B7CEEC",
+        "SeperatorColor":"#B7CEEC"
+    },
+    "line.tableview":{
+        "background.color":"@TableViewBackgroundColor",
+        "separator.color":"@SeperatorColor"
+    },
+    "line.tableview.chatlist":{
+        "background.color":"@TableViewBackgroundColor",
+        "separator.color":"@SeperatorColor"
+    },
+    "line.tableview.more":{
+        "background.color":"@TableViewBackgroundColor"
+    },
+    "line.tableview.cell":{
+        "separator.color":"@SeperatorColor",
+        "background.color":{
+            "normal":"@TableViewCellBackgroundColor",
+            "pressed":"@TableViewPressedBackgroundColor",
+            "selected":"@TableViewSelectedBackgroundColor"
+        }
+    },
+    "line.tableview.cell.friend":{
+        "loadStyle":"line.tableview.cell",
+        "text.color":{
+            "normal":"#444444",
+            "pressed":"#444444"
+        },
+        "text.shadow":{
+            "normal":"#ffffff",
+            "offset":"0px 1px"
+        },
+        "newFriendBackground.color":"#B7CEEC",
+        "statusMessageText.color":"#79BAEC",
+        "statusMessageBackground.image":{
+            "normal":"friends_recom_balloon.png 19px 18px"
+        },
+        "statusMessageEdgeInset":"0px 0px 0px 0px"
+    },
+    "line.tableview.cell.group":{
+        "loadStyle":"line.tableview.cell",
+        "text.color":{
+            "normal":"#444444",
+            "pressed":"#444444"
+        },
+        "text.shadow":{
+            "normal":"#ffffff",
+            "offset":"0px 1px"
+        },
+        "groupMembersCountTextFontSize":9,
+        "groupMembersCountText.color":"#ffffff",
+        "groupMembersCountText.shadow":{
+            "normal":"##B7CEEC,0.2",
+            "offset":"0px 1px"
+        },
+        "groupMembersCountBackground.image":"group_number.png 8px 8px"
+    },
+    "line.tableview.cell.myProfile":{
+        "loadStyle":"line.tableview.cell.friend",
+        "statusMessageBackground.image":{
+            "normal":"friends_list_balloon_01.png 32px 8px"
+        },
+        "statusMessageEdgeInset":"0px 15px 0px 0px"
+    },
+    "line.tableview.cell.buddy":{
+        "loadStyle":"line.tableview.cell.friend",
+        "statusMessageBackground.image":{
+            "normal":"friends_recom_balloon.png 19px 18px"
+        },
+        "statusMessageEdgeInset":"0px 0px 0px 0px"
+    },
+    "line.tableview.cell.addfriend":{
+        "loadStyle":"line.tableview.cell.friend",
+        "selectedCheckmark.image":{
+            "normal":"friend_check_off.png",
+            "selected":"friend_check_on.png"
+        }
+    },
+    "line.tableview.cell.groupInvite":{
+        "loadStyle":"line.tableview.cell",
+        "fontSize":16,
+        "fontWeight": "bold",
+        "text.color":"#C2DFFF",
+        "text.shadow":{
+            "normal":"#ffffff",
+            "offset":"0px 1px"
+        },
+        "icon.image":"button_plusicon.png"
+    },
+    "line.tableview.cell.chatlist":{
+        "loadStyle":"line.tableview.cell",
+        "text.color":"#C2DFFF,0.7",
+        "speakerIcon.image":"icon_speaker.png"
+    },
+    "line.tableview.cell.chatlist.name":{
+        "text.color":{
+            "normal":"#444444",
+            "pressed":"#444444"
+        },
+        "text.shadow":{
+            "normal":"#ffffff,0.5",
+            "offset":"0px 1px"
+        },
+        "fontSize":15,
+        "fontWeight":"bold"
+    },
+    "line.tableview.cell.chatlist.memberCount":{
+        "fontSize":9,
+        "fontWeight":"bold",
+        "text.color":{
+            "normal":"#ffffff",
+            "pressed":"#ffffff"
+        },
+        "text.shadow":{
+            "normal":"#B7CEEC,0.2",
+            "offset":"0px 1px"
+        },
+        "background.image":"group_bg_re3.png 6px 0px"
+    },
+    "line.tableview.cell.chatlist.time":{
+        "fontSize":10,
+        "fontWeight":"normal",
+        "text.color":{
+            "normal":"#4863A0",
+            "pressed":"#4863A0"
+        },
+        "text.shadow":{
+            "normal":"#ffffff,0.5",
+            "offset":"0px 1px"
+        }
+    },
+    "line.tableview.cell.chatlist.unreadCount":{
+        "fontSize":14,
+        "fontWeight":"bold",
+        "text.color":"#ffffff",
+        "text.shadow":{
+            "normal":"#736F6E,0.5",
+            "offset":"0px 1px"
+        },
+        "background.image":"talklist_bt.png 11px 0px"
+    },
+    "line.tableview.cell.chatlist.share":{
+        "loadStyle":"line.tableview.cell.chatlist",
+        "emphasize.color":"#B7CEEC"
+    },
+    "line.tableview.cell.chatlist.memberCount.share":{
+        "background.color":"#BCC6CC",
+        "fontSize":12,
+        "fontWeight":"bold",
+        "text.color":"#ffffff",
+        "text.shadow":{
+            "normal":"#B7CEEC,0.2",
+            "offset":"0px 1px"
+        }
+    },
+    "line.tableview.cell.notificationCenter":{
+        "background.color":{
+            "normal":"@TableViewCellBackgroundColor",
+            "selected":"#f0ece7"
+        },
+        "unreadNotification.color":"#B7CEEC",
+        "seperator.color":"#B7CEEC",
+        "profileBorder.image":"timeline/tm_noti_user_thumb_effect.png"
+    },
+    "line.tableview.cell.notificationCenter.contents":{
+        "text.color":{
+            "normal":"#404040",
+            "pressed":"#404040"
+        },
+        "text.shadow":{
+            "normal":"#ffffff",
+            "offset":"0px 1px"
+        },
+        "fontSize":12
+    },
+    "line.tableview.cell.notificationCenter.sender":{
+        "text.color":{
+            "normal":"#79BAEC",
+            "pressed":"#79BAEC"
+        },
+        "text.shadow":{
+            "normal":"#ffffff",
+            "offset":"0px 1px"
+        },
+        "fontSize":9,
+        "fontWeight":"bold"
+    },
+    "line.tableview.cell.notificationCenter.time":{
+        "text.color":{
+            "normal":"#79BAEC",
+            "pressed":"#79BAEC"
+        },
+        "text.shadow":{
+            "normal":"#ffffff",
+            "offset":"0px 1px"
+        },
+        "fontSize":9
+    },
+    "line.more":{
+        "homeFrameIcon.image":"myhome_frame.png",
+        "settingsIcon.image":"01B_01service02.png",
+        "addFriendsIcon.image":"icon_addfriend.png",
+        "stickerShopIcon.image":"icon_stickershop.png",
+        "officialIcon.image":"icon_official.png",
+        "noticeIcon.image":"icon_notice.png"
+    },
+    "line.tableview.cell.more.Btype":{
+        "fontSize":11,
+        "fontWeight":"bold",
+        "text.color":"#B7CEEC",
+        "text.shadow":{
+            "normal":"#B7CEEC,0.5",
+            "offset":"0px 1px"
+        },
+        "background01.image":{
+            "normal":"MenuB01_normal.png",
+            "pressed":"MenuB01_pressed.png"
+        },
+        "background02.image":{
+            "normal":"MenuB02_normal.png",
+            "pressed":"MenuB02_pressed.png"
+        },
+        "background03.image":{
+            "normal":"MenuB03_normal.png",
+            "pressed":"MenuB03_pressed.png"
+        }
+    },
+    "line.tableview.cell.more.Wtype":{
+        "fontSize":11,
+        "fontWeight":"bold",
+        "text.color":"#B7CEEC",
+        "text.shadow":{
+            "normal":"#ffffff",
+            "offset":"0px 1px"
+        },
+        "background01.image":{
+            "normal":"MenuW01_normal.png",
+            "pressed":"MenuW01_pressed.png"
+        },
+        "background02.image":{
+            "normal":"MenuW02_normal.png",
+            "pressed":"MenuW02_pressed.png"
+        },
+        "background03.image":{
+            "normal":"MenuW03_normal.png",
+            "pressed":"MenuW03_pressed.png"
+        }
+    },
+    "line.tableview.cell.more.nohome":{
+        "loadStyle":"line.tableview.cell.more.Btype",
+        "text.color":"#ffffff,0.3",
+        "text.shadow":{
+            "normal":"#000000,0.3",
+            "offset":"0px 1px"
+        }
+    },
+    "line.tableview.sectionheader":{
+        "fontSize":11,
+        "fontWeight": "bold",
+        "text.color":"#79BAEC",
+        "text.shadow":{
+            "normal":"#ffffff,0.7",
+            "offset":"0px 1px"
+        },
+        "background.image":"categoryimage_bg.png 0px 5px",
+        "favoriteIcon.image":"Favoritetap_icon.png",
+        "expandedIcon.image":"category_arrow_01.png",
+        "collapsedIcon.image":"category_arrow_02.png",
+        "topBar.color":"#B7CEEC"
+    },
+    "line.tableview.sectionheader.buddy":{
+        "loadStyle":"line.tableview.sectionheader",
+        "fontSize":10,
+        "fontWeight": "bold",
+        "text.color":"#79BAEC",
+        "text.shadow":{
+            "normal":"#ffffff,0.3",
+            "offset":"0px 1px"
+        },
+        "image.arrow":"link_icon_RE.png"
+    },
+    "line.navigationBar":{
+        "background.image":"tm_topbar.png"
+    },
+    "line.navigationBar.titleView":{
+        "text.color":"#ffffff",
+        "text.shadow":{
+            "normal":"#56A5EC,0.5",
+            "offset":"0px 1px"
+        },
+        "fontSize":20,
+        "fontWeight":"bold"
+    },
+    "line.navigationBar.normal.portrait":{
+        "background.image":{
+            "normal":"navigation_btn_02.png 15px 0px",
+            "pressed":"navigation_btn_02_tab.png 15px 0px"
+        },
+        "text.color":"#ffffff",
+        "text.shadow":{
+            "normal":"#000000,0.2",
+            "offset":"0px 1px"
+        },
+        "fontSize":12,
+        "fontWeight":"bold"
+    },
+    "line.navigationBar.normal.landscape":{
+        "background.image":{
+            "normal":"navigation_02_btn_02.png 15px 0px",
+            "pressed":"navigation_02_btn_02_tab.png 15px 0px"
+        }
+    },
+    "line.navigationBar.back.portrait":{
+        "background.image":{
+            "normal":"navigation_btn_01.png 13px 0px",
+            "pressed":"navigation_btn_01_02_tab.png 13px 0px"
+        },
+        "icon.image":"navigation_icon_05.png"
+    },
+    "line.navigationBar.back.landscape":{
+        "background.image":{
+            "normal":"navigation_02_btn_01.png 12px 0px",
+            "pressed":"navigation_02_btn_01_tab.png 12px 0px"
+        },
+        "icon.image":"navigation_icon_05_landscape.png"
+    },
+    "line.navigationBar.back.portrait.noIcon":{
+        "background.image":{
+            "normal":"navigation_btn_01.png 13px 0px",
+            "pressed":"navigation_btn_01_02_tab.png 13px 0px"
+        }
+    },
+    "line.navigationBar.back.landscape.noIcon":{
+        "background.image":{
+            "normal":"navigation_02_btn_01.png 12px 0px",
+            "pressed":"navigation_02_btn_01_tab.png 12px 0px"
+        }
+    },
+    "line.navigationBar.back.chatWithNumber":{
+        "backButton.portrait.image":"navigation_icon_05.png",
+        "backButton.landscape.image":"navigation_icon_05_landscape.png",
+        "text.color":"#ffffff",
+        "text.shadow":{
+            "normal":"#000000,0.2",
+            "offset":"0px 1px"
+        },
+        "fontSize":14
+    },
+    "line.navigationBar.edit":{
+        "loadStyle":"line.navigationBar.normal.portrait"
+    },
+    "line.navigationBar.highlightedButton":{
+        "loadStyle":"line.navigationBar.normal.portrait",
+        "background.image":{
+            "normal":"header_bt_charge.png 15px 0px",
+            "pressed":"navigation_btn_02_tab.png 15px 0px"
+        },
+        "text.color":{
+            "normal":"#56A5EC",
+            "pressed":"#ffffff"
+        },
+        "text.shadow":{
+            "normal":"#ffffff,0.2",
+            "offset":"0px 1px"
+        }
+    },
+    "line.navigationBar.addPerson":{
+        "loadStyle":"line.navigationBar.normal.portrait",
+        "icon.image":"navigation_icon_01.png"
+    },
+    "line.navigationBar.add":{
+        "loadStyle":"line.navigationBar.normal.portrait",
+        "icon.image":"navigation_icon_06.png",
+        "size":"53px 31px",
+        "content.edgeInsets":"-3px -3px -1px 2px"
+    },
+    "line.navigationBar.lineAt":{
+        "loadStyle":"line.navigationBar.normal.portrait",
+        "icon.image":"logo_header_lineat.png"
+    },
+    "line.navigationBar.manage":{
+        "loadStyle":"line.navigationBar.normal.portrait",
+        "icon.image":"navigation_icon_03.png",
+        "size":"53px 31px",
+        "content.edgeInsets":"-3px -2px -1px 1px"
+    },
+    "line.navigationBar.mySticker":{
+        "loadStyle":"line.navigationBar.normal.portrait",
+        "icon.image":"icon_mysticker.png",
+        "content.edgeInsets":"-2px 0px 1px -1px"
+    },
+    "line.navigationBar.addChat":{
+        "loadStyle":"line.navigationBar.normal.portrait",
+        "icon.image":"navigation_icon_04.png",
+        "size":"53px 31px",
+        "content.edgeInsets":"-3px -2px -1px 1px"
+    },
+    "line.navigationBar.removeChat":{
+        "loadStyle":"line.navigationBar.normal.portrait",
+        "background.image":{
+            "normal":"navigation_btn_delete.png 15px 0px",
+            "pressed":"navigation_btn_delete_tab.png 15px 0px"
+        },
+        "text.color":{
+            "normal":"#79BAEC",
+            "pressed":"#ffffff"
+        },
+        "text.shadow":{
+            "normal":"#ffffff,0.2",
+            "offset":"0px 1px"
+        }
+    },
+    "line.navigationBar.groupboard.portrait":{
+        "loadStyle":"line.navigationBar.normal.portrait",
+        "icon.image":"icon_groupboard.png"
+    },
+    "line.navigationBar.groupboard.landscape":{
+        "loadStyle":"line.navigationBar.normal.landscape",
+        "icon.image":"icon_groupboard_ls.png"
+    },
+    "line.navigationBar.buddyHome.portrait":{
+        "loadStyle":"line.navigationBar.normal.portrait",
+        "icon.image":"timeline/tm_topbar_btn_home.png"
+    },
+    "line.navigationBar.buddyHome.landscape":{
+        "loadStyle":"line.navigationBar.normal.landscape",
+        "icon.image":"timeline/tm_topbar_btn_home.png"
+    },
+    "line.navigationBar.chargeCoin":{
+        "background.image":{
+            "normal":"header_bt_charge.png 5px 0px",
+            "pressed":"header_bt_charge_tap.png 5px 0px"
+        },
+        "text.color":"#56A5EC",
+        "text.shadow":{
+            "normal":"#ffffff,0.5",
+            "offset":"0px 1px"
+        },
+        "fontSize":12,
+        "fontWeight":"bold"
+    },
+    "line.navigationBar.mapMenu":{
+        "loadStyle":"line.navigationBar.normal.portrait",
+        "icon.image":"mapinfo_map_icon.png"
+    },
+    "line.tabBar":{
+        "background.image":"line_GNB_bg.png",
+        "text.color":{
+            "normal":"#6495ED",
+            "pressed":"#ffffff"
+        },
+        "text.shadow":{
+            "normal":"#79BAEC, 0.5",
+            "pressed":"#6495ED, 0.4",
+            "offset":"0px 1px"
+        },
+        "fontSize":9,
+        "fontWeight":"bold",
+        "iconTopMargin":0,
+        "titleTopMargin":0,
+        "badge.image":"noti_img.png 10px 11.5px",
+        "badgeOffset":"0px -11px"
+    },
+    "line.tabBar.friends":{
+        "icon.image":{
+            "normal":"line_GNB_01.png",
+            "selected":"line_GNB_01_on.png"
+        }
+    },
+    "line.tabBar.chat":{
+        "icon.image":{
+            "normal":"line_GNB_02.png",
+            "selected":"line_GNB_02_on.png"
+        }
+    },
+    "line.tabBar.timeline":{
+        "icon.image":{
+            "normal":"line_GNB_03.png",
+            "selected":"line_GNB_03_on.png"
+        },
+        "event.image":" timeline/line_GNB_03_newpost.png"
+    },
+    "line.tabBar.more":{
+        "icon.image":{
+            "normal":"line_GNB_04.png",
+            "selected":"line_GNB_04_on.png"
+        }
+    },
+    "line.searchBar":{
+        "text.color":"#000000",
+        "fontSize":14,
+        "fontWeight":"bold",
+        "background.image":"searchbar_bg.png",
+        "placeHolderText.color":"#79BAEC",
+        "cancelButtonText.color":"#ffffff",
+        "cancelButtonText.shadow":{
+            "normal":"#000000,0.2",
+            "offset":"0px 1px"
+        },
+        "canceButtonFontSize":12,
+        "cancelButtonFontWeight":"bold",
+        "cancelButton.image":{
+            "normal":"searchbar_btn_cancel.png 15px 0px",
+            "pressed":"searchbar_btn_cancel_on.png 15px 0px"
+        },
+        "clearButton.image":{
+            "normal":"searchbar_btn_clear.png",
+            "pressed":"searchbar_btn_clear_on.png"
+        },
+        "searchbarTextFieldBackground.image":"searchbar_input_bg.png",
+        "searchbarTextFieldLeftView.image":"searchbar_icon_search.png"
+    },
+    "line.searchBar.location":{
+        "loadStyle":"line.searchBar"
+    },
+    "line.segmentedControl":{
+        "leftTab.image":{
+            "normal":"tab_01.png 5px 0px",
+            "selected":"tab_01_tap.png 5px 0px"
+        },
+        "midTab.image":{
+            "normal":"tab_02.png 5px 0px",
+            "selected":"tab_02_tap.png 5px 0px"
+        },
+        "rightTab.image":{
+            "normal":"tab_03.png 5px 0px",
+            "selected":"tab_03_tap.png 5px 0px"
+        },
+        "text.color":"#82CAFF",
+        "text.shadow":{
+            "normal":"#ffffff",
+            "offset":"0px 1px"
+        },
+        "fontSize":12,
+        "fontWeight":"bold"
+    },
+    "line.segmentedControl.background":{
+        "image":"tab_bg.png"
+    },
+    "line.friend.bulkEdit.bottom":{
+        "background.image":"fredit_bg.png",
+        "blockButtonNumberText.color":"#B7CEEC",
+        "hideButtonNumberText.color":"#8a8a8a"
+    },
+    "line.friend.bulkEdit.block":{
+        "background.image":{
+            "normal":"fredit_bt_1.png 13px 0px",
+            "pressed":"fredit_bt_1_tap.png 13px 0px",
+            "dimmed":"fredit_bt_1.png 13px 0px"
+        },
+        "text.color":{
+            "normal":"#ffffff",
+            "dimmed":"#B7CEEC"
+        },
+        "text.shadow":{
+            "normal":"#79BAEC,0.5",
+            "offset":"0px 1px"
+        },
+        "fontSize":14,
+        "fontWeight":"bold"
+    },
+    "line.friend.bulkEdit.hide":{
+        "background.image":{
+            "normal":"fredit_bt_2.png 13px 0px",
+            "pressed":"fredit_bt_2_tap.png 13px 0px",
+            "dimmed":"fredit_bt_2.png 13px 0px"
+        },
+        "text.color":{
+            "normal":"#ffffff",
+            "dimmed":"#8a8a8a"
+        },
+        "text.shadow":{
+            "normal":"#000000,0.5",
+            "offset":"0px 1px"
+        },
+        "fontSize":14,
+        "fontWeight":"bold"
+    },
+    "line.friend.multiInvite":{
+        "background.image":{
+            "normal":"fredit_bt_1.png 13px 0px",
+            "pressed":"fredit_bt_1_tap.png 13px 0px"
+        },
+        "text.color":{
+            "normal":"#ffffff"
+        },
+        "text.shadow":{
+            "normal":"#79BAEC,0.5",
+            "offset":"0px 1px"
+        },
+        "fontSize":13,
+        "fontWeight":"bold",
+        "subLabel.color":"#B7CEEC"
+    },
+    "line.friend.recommend.addFriendPanel":{
+        "text.color":"@DefaultTextColor",
+        "text.shadow":{
+            "normal":"#ffffff,0.5",
+            "offset":"0px 1px"
+        },
+        "fontSize":11,
+        "fontWeight":"bold",
+        "groupAddIcon.image":"icon_group.png",
+        "groupAddBackground.image":{
+            "normal":"tpye_bg_01.png",
+            "pressed":"tpye_bg_01_02.png"
+        },
+        "qrCodeIcon.image":"icon_qrcode.png",
+        "qrCodeBackground.image":{
+            "normal":"tpye_bg_02.png",
+            "pressed":"tpye_bg_02_02.png"
+        },
+        "shakeItIcon.image":"icon_shake.png",
+        "shakeItBackground.image":{
+            "normal":"tpye_bg_02.png",
+            "pressed":"tpye_bg_02_02.png"
+        },
+        "searchIcon.image":"icon_idsearch.png",
+        "searchBackground.image":{
+            "normal":"tpye_bg_03.png",
+            "pressed":"tpye_bg_03_03.png"
+        }
+    },
+    "line.friend.recommend.invite":{
+        "background.image":{
+            "normal":"btn_homewrite02.png 5px 0px",
+            "pressed":"btn_homewrite02_press.png 5px 0px"
+        },
+        "text.color":"#ffffff",
+        "text.shadow":{
+            "normal":"#79BAEC,0.5",
+            "offset":"0px 1px"
+        },
+        "fontSize":13,
+        "fontWeight":"bold",
+        "plusIcon.image":"btn_icon_homewrite02.png"
+    },
+    "line.friend.recommend.makeGroup":{
+        "background.image":{
+            "normal":"group_bt_bg.png 1px 0px",
+            "pressed":"group_bt_bg_press.png 1px 0px"
+        }
+    },
+    "line.friend.recommend.makeGroup.groupIcon":{
+        "image":"group_bt_icon.png"
+    },
+    "line.friend.recommend.makeGroup.groupArrow":{
+        "image":"group_link.png"
+    },
+    "line.friend.recommend.makeGroup.titleLabel":{
+        "text.color":{
+            "normal":"#444444"
+        },
+        "text.shadow":{
+            "normal":"#ffffff",
+            "offset":"0px 1px"
+        },
+        "fontSize":16,
+        "fontWeight":"bold"
+    },
+    "line.friend.recommend.makeGroup.lineColor":{
+        "background.color":"#B7CEEC"
+    },
+    "line.group.detail.top":{
+        "background.image":"user_bg_board.png",
+        "groupProfileBorder.image":"userimage_re_board.png",
+        "groupMemberIcon.image":"group_member_icon.png",
+        "memberDescriptionText.color":"#56A5EC",
+        "memberDescriptionText.shadow":{
+            "normal":"#ffffff",
+            "offset":"0px 1px"
+        },
+        "memberNumberText.color":"#fe4486",
+        "memberNumberText.shadow":{
+            "normal":"#ffffff",
+            "offset":"0px 1px"
+        }
+    },
+    "line.group.detail.top.button":{
+        "background.image":{
+            "normal":"btn_talk_01_board.png 5px 0px",
+            "pressed":"btn_talk_01_board_tab.png 5px 0px"
+        },
+        "text.color":{
+            "normal":"#ffffff"
+        },
+        "text.shadow":{
+            "normal":"#56A5EC,0.5",
+            "offset":"0px 1px"
+        },
+        "fontSize":14,
+        "fontWeight":"bold"
+    },
+    "line.officialAccount.bottom":{
+        "background.color":{
+            "normal":"@TableViewCellBackgroundColor",
+            "pressed":"@TableViewPressedBackgroundColor"
+        },
+        "text.color":"#B7CEEC",
+        "text.shadow":{
+            "normal":"#ffffff",
+            "offset":"0px 1px"
+        },
+        "fontSize":16,
+        "fontWeight":"bold",
+        "icon.image":"button_plusicon.png"
+    },
+    "line.welcomeView":{
+        "background.color":"#ffffff",
+        "image.default01":"default_friend_mc01.png",
+        "image.default02":"default_friend_mc02.png",
+        "image.default03":"default_friend_mc03.png",
+        "image.default04":"default_friend_mc04.png",
+        "image.arrow":"arrow_image.png"
+    },
+    "line.welcomeView.title":{
+        "text.color":"#56A5EC",
+        "text.shadow":{
+            "normal":"#ffffff",
+            "offset":"0px 1px"
+        },
+        "fontSize":18,
+        "fontWeight":"bold",
+        "textAlignment":"center"
+    },
+    "line.welcomeView.description":{
+        "text.color":"#B7CEEC",
+        "text.shadow":{
+            "normal":"#ffffff",
+            "offset":"0px 1px"
+        },
+        "fontSize":11,
+        "fontWeight":"bold"
+    },
+    "line.welcomeView.inviteButton":{
+        "text.color":"#ffffff",
+        "text.shadow":{
+            "normal":"#6495ED,0.5",
+            "offset":"0px 1px"
+        },
+        "fontSize":15,
+        "fontWeight":"bold",
+        "background.image":{
+            "normal":"default_friend_bnt01.png 17px 0px",
+            "pressed":"default_friend_bnt01_press.png 17px 0px"
+        }
+    },
+    "line.notificationCenter.popup":{
+        "border.image":"timeline/tm_noti_bg.png 38px 63px",
+        "nodata.image":"timeline/tm_nodata_img.png",
+        "retry.image":"img_retry.png"
+    },
+    "line.notificationCenter.popup.title":{
+        "text.color":"#ffffff",
+        "text.shadow":{
+            "normal":"#000000,0.3",
+            "offset":"0px 1px"
+        },
+        "fontSize":13,
+        "fontWeight":"bold"
+    },
+    "line.notificationCenter.popup.errorlabel":{
+        "text.color":"#56A5EC",
+        "fontSize":16
+    },
+    "line.notificationCenter.popup.reloadButton":{
+        "background.image":{
+            "normal":"timeline/tm_btn_go_more_normal.png 15px 0px",
+            "pressed":"timeline/tm_btn_go_more_pressed.png 15px 0px"
+        },
+        "text.color":"#ffffff",
+        "text.shadow":{
+            "normal":"#6495ED,0.5",
+            "offset":"0px 1px"
+        },
+        "fontSize":13,
+        "fontWeight":"bold"
+    },
+    "line.notificationCenter.popup.emptyLabel":{
+        "fontSize":17,
+        "text.color":"@DefaultTextColor"
+    },
+    "line.passcode":{
+        "descriptionBackground.image":"passcode_bg1.png",
+        "digitBackground.image":"passcode_bg2.png",
+        "digitField01.image":"passcode_code_1.png",
+        "digitField02.image":"passcode_code_1b.png",
+        "digitField03.image":"passcode_code_1c.png",
+        "digitField04.image":"passcode_code_1d.png",
+        "digitDot01.image":"passcode_code_2.png",
+        "digitDot02.image":"passcode_code_2b.png",
+        "digitDot03.image":"passcode_code_2c.png",
+        "digitDot04.image":"passcode_code_2d.png",
+        "inputtedDigitFieldHidden":true,
+        "keypad0.image":{
+            "normal":"passcode_bt_11.png",
+            "pressed":"passcode_bt_11_tab.png"
+        },
+        "keypad1.image":{
+            "normal":"passcode_bt_1.png",
+            "pressed":"passcode_bt_1_tab.png"
+        },
+        "keypad2.image":{
+            "normal":"passcode_bt_2.png",
+            "pressed":"passcode_bt_2_tab.png"
+        },
+        "keypad3.image":{
+            "normal":"passcode_bt_3.png",
+            "pressed":"passcode_bt_3_tab.png"
+        },
+        "keypad4.image":{
+            "normal":"passcode_bt_4.png",
+            "pressed":"passcode_bt_4_tab.png"
+        },
+        "keypad5.image":{
+            "normal":"passcode_bt_5.png",
+            "pressed":"passcode_bt_5_tab.png"
+        },
+        "keypad6.image":{
+            "normal":"passcode_bt_6.png",
+            "pressed":"passcode_bt_6_tab.png"
+        },
+        "keypad7.image":{
+            "normal":"passcode_bt_7.png",
+            "pressed":"passcode_bt_7_tab.png"
+        },
+        "keypad8.image":{
+            "normal":"passcode_bt_8.png",
+            "pressed":"passcode_bt_8_tab.png"
+        },
+        "keypad9.image":{
+            "normal":"passcode_bt_9.png",
+            "pressed":"passcode_bt_9_tab.png"
+        },
+        "keypadCancel.image":{
+            "normal":"passcode_bt_10.png",
+            "pressed":"passcode_bt_10_tab.png"
+        },
+        "keypadDel.image":{
+            "normal":"passcode_bt_12.png",
+            "pressed":"passcode_bt_12_tab.png"
+        }
+    },
+    "line.passcode.title":{
+        "text.color":"#ffffff",
+        "text.shadow":{
+            "normal":"#6495ED,0.5",
+            "offset":"0px 1px"
+        },
+        "fontSize":30,
+        "fontWeight":"bold"
+    },
+    "line.passcode.message":{
+        "text.color":"#B7CEEC",
+        "text.shadow":{
+            "normal":"#6495ED,0.3",
+            "offset":"0px 1px"
+        },
+        "fontSize":12
+    },
+    "line.passcode.cancelButton.title":{
+        "text.color":"#56A5EC",
+        "text.shadow":{
+            "normal":"#000000,0.15",
+            "offset":"0px 1px"
+        },
+        "fontSize":12,
+        "fontWeight":"bold"
+    },
+    "line.tooltip":{
+        "bgImage":"tip.png"
+    },
+    "line.tooltip.label":{
+        "text.color":"#6495ED",
+        "text.shadow":{
+            "normal":"#ffffff",
+            "offset":"0px 1px"
+        },
+        "fontSize":13
+    },
+    "line.hitokoto.HeaderView":{
+        "image.backgroundColor":"user_bg_board.png 0px, 0px",
+        "image.profileCover":"userimage_re_board.png"
+    },
+    "line.hitokoto.HeaderView.nameLabel":{
+        "text.color":"#fe2879",
+        "text.shadow":{
+            "normal":"#ffffff",
+            "offset":"0px 1px"
+        },
+        "fontSize":16,
+        "fontWeight":"bold"
+    },
+    "line.chat.room":{
+        "color.cellText":"#271e1b",
+        "image.speaker":"icon_speaker_02.png",
+        "image.thumbnail.mask.send":"image_02_shape_02_right.png 25px 25px",
+        "image.thumbnail.mask.receive":"image_02_shape_01_left.png 25px 25px"
+    },
+    "line.chat.room.background":{
+        "background.color":"#fff4f9"
+    },
+    "line.chat.room.topDropButton.portrait":{
+        "icon.image":{
+            "normal":"chattop_bt_icon01.png",
+            "selected":"chattop_bt_icon02.png"
+        },
+        "size":"53px 31px",
+        "content.edgeInsets":"-3px -2px -1px 1px"
+    },
+    "line.chat.room.topDropButton.landscape":{
+        "icon.image":{
+            "normal":"wi_chattop_bt_icon02.png",
+            "selected":"wi_chattop_bt_icon01.png"
+        },
+        "size":"44px 25px",
+        "content.edgeInsets":"0px 0px 0px 0px"
+    },
+    "line.chat.room.topDropMenu":{
+        "image.portrait.bg":"chattop_bg.png 7px 0px",
+        "image.portrait.bgTab":"chattop_bg_tab.png 7px 0px",
+        "image.landscape.bg":"wi_chattop_bg.png 7px 0px",
+        "image.landscape.bgTab":"wi_chattop_bg_tab.png 7px 0px"
+    },
+    "line.chat.room.topDropMenu.menuName":{
+        "text.color":{
+            "normal":"#56A5EC",
+            "dimmed":"#56A5EC,0.6"
+        },
+        "text.shadow":{
+            "normal":"#ffffff",
+            "offset":"0px 1px"
+        },
+        "fontSize":11
+    },
+    "line.chat.room.topDropMenu.icons":{
+        "image.call":"topmenu_01.png",
+        "image.invitation":"topmenu_02.png",
+        "image.notification.on":"topmenu_03_press.png",
+        "image.notification.off":"topmenu_03.png",
+        "image.block":"topmenu_04.png",
+        "image.unblock":"topmenu_04_press.png",
+        "image.game":"topmenu_05.png",
+        "image.gift":"topmenu_06.png",
+        "image.settings":"topmenu_07.png",
+        "image.leaveRoom":"topmenu_08.png",
+        "image.editGroup":"topmenu_09.png",
+        "image.leaveGroup":"topmenu_10.png",
+        "image.editFriendName":"topmenu_11.png",
+        "image.addGroup":"ip_new_icon01.png",
+        "image.call.disable":"topmenu_01_off.png",
+        "image.invitation.disable":"topmenu_02_off.png",
+        "image.notification.on.disable":"topmenu_03_press_off.png",
+        "image.notification.off.disable":"topmenu_03_off.png",
+        "image.unblock.disable":"topmenu_04_press.png",
+        "image.game.disable":"topmenu_05_off.png",
+        "image.gift.disable":"topmenu_06_off.png",
+        "image.editGroup.disable":"topmenu_09_off.png",
+        "image.leaveGroup.disable":"topmenu_10_off.png",
+        "image.editFriendName.disable":"topmenu_11_off.png",
+        "image.addGroup.disable":"ip_new_icon02.png",
+        "image.gallery":"topmenu_12.png"
+    },
+    "line.chat.room.topDropMenu.shadow":{
+        "image":"chattop_bg_shadow.png"
+    },
+    "line.chat.memberList":{
+        "image.background":"background_members_chat.png 1px 0px",
+        "image.arrow":"arrow_right_03.png"
+    },
+    "line.chat.cell.info.background":{
+        "image":"bg_readpoint01.png 10px, 10px"
+    },
+    "line.chat.cell.info.background":{
+        "image":"bg_readpoint01.png 10px, 10px"
+    },
+    "line.chat.cell.info.text":{
+        "text.color":"#56A5EC",
+        "text.shadow":{
+            "normal":"#ffffff,0.5",
+            "offset":"0px 1px"
+        },
+        "fontSize":10,
+        "fontWeight":"bold"
+    },
+    "line.chat.cell.devideColor":{
+        "cell.devideColor.Top":"#B7CEEC, 0.0",
+        "cell.devideColor.Bottom":"#B7CEEC"
+    },
+    "line.chat.cell.sendBubble":{
+        "loadStyle":"line.chat.cell.devideColor",
+        "contentImage":"speech_bubble_02_default.png 19px, 19px"
+    },
+    "line.chat.cell.recvBubble":{
+        "loadStyle":"line.chat.cell.devideColor",
+        "contentImage":"speech_bubble_01_default.png 23px, 18px"
+    },
+    "line.chat.cell.messageTime":{
+        "text.color":"#56A5EC",
+        "fontSize":10
+    },
+    "line.chat.cell.userName":{
+        "loadStyle":"line.chat.cell.messageTime",
+        "fontWeight":"bold"
+    },
+    "line.chat.cell.readCount":{
+        "loadStyle":"line.chat.cell.messageTime"
+    },
+    "line.chat.cell.autoresend":{
+        "image":"autoresend_icon.png"
+    },
+    "line.chat.cell.contactMessage.sendName":{
+        "text.color":"#6495ED",
+        "fontSize":16
+    },
+    "line.chat.cell.contactMessage.recvName":{
+        "loadStyle":"line.chat.cell.contactMessage.sendName"
+    },
+    "line.chat.cell.contactMessage.arrow":{
+        "image":"friend_balloon_more.png"
+    },
+    "line.chat.cell.presentMessage":{
+        "text.color.send":"#6495ED",
+        "text.color.receive":"#6495ED"
+    },
+    "line.chat.cell.presentMessage.send.bubbleView":{
+        "image":"gbubble.png 15px 15px"
+    },
+    "line.chat.cell.presentMessage.receive.bubbleView":{
+        "image":"wbubble.png 15px 15px"
+    },
+    "line.chat.cell.presentMessage.receive.button":{
+        "text.color":"#ffffff",
+        "text.shadow":{
+            "normal":"#157DEC, 0.7",
+            "offset":"0px 1px"
+        },
+        "fontSize":13,
+        "fontWeight":"bold",
+        "background.image":{
+            "normal":"btn_wbubble.png 7px 0px",
+            "pressed":"btn_wbubble_over.png 7px 0px"
+        }
+    },
+    "line.chat.cell.callMessage":{
+        "image.bubble.send":"speech_bubble_02_default.png 19px, 19px",
+        "image.bubble.receive":"speech_bubble_01_default.png 23px, 18px",
+        "image.call.success":"chat_call_success.png",
+        "image.call.cancel":"chat_call_canceled.png"
+    },
+    "line.chat.cell.callMessage.send.infoLabel":{
+        "text.color":"#444444",
+        "text.shadow":{
+            "normal":"#ffffff, 0.8",
+            "offset":"0px 1px"
+        },
+        "fontSize":11,
+        "fontWeight":"bold"
+    },
+    "line.chat.cell.callMessage.receive.infoLabel":{
+        "text.color":"#444444",
+        "text.shadow":{
+            "normal":"#ffffff, 0.8",
+            "offset":"0px 1px"
+        },
+        "fontSize":11,
+        "fontWeight":"bold"
+    },
+    "line.chat.cell.videoMessage.sent":{
+        "loadStyle":"line.chat.cell.sendBubble",
+        "errorIcon.image":"movie_play_error.png",
+        "playIcon.image":{
+            "normal":"movie_play01.png",
+            "pressed":"movie_play01_tap.png"
+        }
+    },
+    "line.chat.cell.videoMessage.recv":{
+        "loadStyle":"line.chat.cell.recvBubble",
+        "errorIcon.image":"movie_play_error.png",
+        "playIcon.image":{
+            "normal":"movie_play01.png",
+            "pressed":"movie_play01_tap.png"
+        }
+    },
+    "line.chat.cell.voiceMessage.recv":{
+        "loadStyle":"line.chat.cell.recvBubble",
+        "speaker.image":"ico_gray_speak.png",
+        "expired.image":"novoice_icon_02.png",
+        "playButton.image": {
+            "normal":"ico_gray_play.png",
+            "pressed":"ico_gray_play.png",
+            "disabled":"ico_gray_play_inactive.png"
+        },
+        "pauseButton.image": {
+            "normal":"ico_gray_pause.png",
+            "pressed":"ico_gray_pause.png"
+        },
+        "playing.image":{
+            "icon01.image":"ico_gray_speak.png",
+            "icon02.image":"ico_gray_speak_01.png",
+            "icon03.image":"ico_gray_speak_02.png",
+            "icon04.image":"ico_gray_speak_03.png"
+        },
+        "loadingIndicator.color":"#949494",
+        "loadingIndicatorType":"gray",
+        "colon.image":{
+            "normal":"voice_count_B.png",
+            "pressed":"voice_count_B_tap.png"
+        },
+        "horizontalSeperator.image":"bg_gray_partition_horizontal01.png",
+        "verticalSeperator.image":"bg_gray_partition_vertical01.png",
+        "exportButton.image":{
+            "normal":"ico_gray_export.png",
+            "pressed":"ico_gray_export.png",
+            "dimmed":"ico_gray_export_inactive.png"
+        },
+        "text.color":{
+            "normal":"#444444",
+            "pressed":"#919191"
+        },
+        "text.shadow":{
+            "normal":"#ffffff",
+            "offset":"0px 1px"
+        },
+        "fontSize":20,
+        "fontWeight":"bold"
+    },
+    "line.chat.cell.voiceMessage.sent":{
+        "loadStyle":"line.chat.cell.sendBubble",
+        "speaker.image":"ico_green_speak.png",
+        "expired.image":"novoice_icon_01.png",
+        "playButton.image": {
+            "normal":"ico_greeny_play.png",
+            "pressed":"ico_greeny_play.png",
+            "dimmed":"ico_greeny_play_inactive.png"
+        },
+        "pauseButton.image": {
+            "normal":"ico_green_pause.png",
+            "pressed":"ico_green_pause.png"
+        },
+        "playing.image":{
+            "icon01.image":"ico_green_speak.png",
+            "icon02.image":"ico_green_speak_01.png",
+            "icon03.image":"ico_green_speak_02.png",
+            "icon04.image":"ico_green_speak_03.png"
+        },
+        "loadingIndicator.color":"#B7CEEC",
+        "loadingIndicatorType":"gray",
+        "colon.image":{
+            "normal":"voice_count_A.png",
+            "pressed":"voice_count_A_tap.png"
+        },
+        "horizontalSeperator.image":"bg_green_partition_horizontal01.png",
+        "verticalSeperator.image":"bg_green_partition_vertical01.png",
+        "exportButton.image":{
+            "normal":"ico_green_export.png",
+            "pressed":"ico_green_export.png",
+            "dimmed":"ico_green_export_inactive.png"
+        },
+        "text.color":{
+            "normal":"#56A5EC",
+            "pressed":"#79BAEC"
+        },
+        "text.shadow":{
+            "normal":"#ffffff",
+            "offset":"0px 1px"
+        },
+        "fontSize":20,
+        "fontWeight":"bold"
+    },
+    "line.chat.cell.fileMessage.recv":{
+        "loadStyle":"line.chat.cell.recvBubble",
+        "fileIcon.image":"icn_send_file01.png",
+        "arrawIcon.image":"friend_balloon_more.png",
+        "descText.color":"#444444",
+        "descText.shadow":{
+            "normal":"",
+            "offset":"0px 0px"
+        },
+        "descFontSize":13,
+        "descFontWeight":"bold",
+        "durationText.color":"#79BAEC",
+        "durationText.shadow":{
+            "normal":"",
+            "offset":"0px 0px"
+        },
+        "durationFontSize":10,
+        "durationFontWeight":"bold",
+        "fileSizeText.color":"#79BAEC",
+        "fileSizeText.shadow":{
+            "normal":"",
+            "offset":"0px 0px"
+        },
+        "fileSizeFontSize":10,
+        "fileSizeFontWeight":"bold"
+    },
+    "line.chat.cell.fileMessage.sent":{
+        "loadStyle":"line.chat.cell.sendBubble",
+        "fileIcon.image":"icn_send_file01.png",
+        "arrawIcon.image":"friend_balloon_more.png",
+        "descText.color":"#444444",
+        "descText.shadow":{
+            "normal":"",
+            "offset":"0px 0px"
+        },
+        "descFontSize":13,
+        "descFontWeight":"bold",
+        "durationText.color":"#79BAEC",
+        "durationText.shadow":{
+            "normal":"",
+            "offset":"0px 0px"
+        },
+        "durationFontSize":10,
+        "durationFontWeight":"bold",
+        "fileSizeText.color":"#79BAEC",
+        "fileSizeText.shadow":{
+            "normal":"",
+            "offset":"0px 0px"
+        },
+        "fileSizeFontSize":10,
+        "fileSizeFontWeight":"bold"
+    },
+    "line.chat.cell.groupboard.recv":{
+        "loadStyle":"line.chat.cell.recvBubble",
+        "postText.color":"#6495ED",
+        "postText.shadow":{
+            "normal":"",
+            "offset":"0px 0px"
+        },
+        "tailText.color":"#6495ED",
+        "tailText.shadow":{
+            "normal":"",
+            "offset":"0px 0px"
+        },
+        "goButtonText.color":"#A0CFEC",
+        "goButtonText.shadow":{
+            "normal":"",
+            "offset":"0px 0px"
+        },
+        "goButtonTextFontSize":12,
+        "goButtonTextFontWeight":"bold",
+        "addressFlagIcon.image":"mapinfo_chat_flag.png",
+        "addressText.color":"#000000",
+        "addressText.shadow":{
+            "normal":"",
+            "offset":"0px 0px"
+        },
+        "addressTextFontSize":12,
+        "arrowIcon.image":"speech_bubble_group_icon_arrow.png",
+        "border.image":"speech_bubble_image_border.png 1px 1px",
+        "defaultPhoto.image":"speech_icon_error_p.png",
+        "defaultVideo.image":"speech_icon_error_v.png",
+        "defaultSticker.image":"speech_icon_error_s.png"
+    },
+    "line.chat.cell.groupboard.sent":{
+        "loadStyle":"line.chat.cell.sendBubble",
+        "postText.color":"#6495ED",
+        "postText.shadow":{
+            "normal":"",
+            "offset":"0px 0px"
+        },
+        "tailText.color":"#6495ED",
+        "tailText.shadow":{
+            "normal":"",
+            "offset":"0px 0px"
+        },
+        "goButtonText.color":"#56A5EC",
+        "goButtonText.shadow":{
+            "normal":"",
+            "offset":"0px 0px"
+        },
+        "goButtonTextFontSize":12,
+        "goButtonTextFontWeight":"bold",
+        "addressFlagIcon.image":"mapinfo_chat_flag.png",
+        "addressText.color":"#000000",
+        "addressText.shadow":{
+            "normal":"",
+            "offset":"0px 0px"
+        },
+        "addressTextFontSize":12,
+        "arrowIcon.image":"speech_bubble_group_icon_arrow.png",
+        "border.image":"speech_bubble_image_border.png 1px 1px",
+        "defaultPhoto.image":"speech_icon_error_p.png",
+        "defaultVideo.image":"speech_icon_error_v.png",
+        "defaultSticker.image":"speech_icon_error_s.png"
+    },
+    "line.chat.cell.linkMessage.recv":{
+        "loadStyle":"line.chat.cell.recvBubble",
+        "descriptionText.color":"#6495ED",
+        "descriptionText.shadow":{
+            "normal":"",
+            "offset":"0px 0px"
+        },
+        "durationText.color":"#6495ED",
+        "durationText.shadow":{
+            "normal":"",
+            "offset":"0px 0px"
+        },
+        "openButtonText.color":"#6495ED",
+        "openButtonText.shadow":{
+            "normal":"",
+            "offset":"0px 0px"
+        },
+        "border.image":"thumbnail_shadow_a.png",
+        "arrowIcon.image":"speech_bubble_app_icon_arrow.png"
+    },
+    "line.chat.cell.linkMessage.sent":{
+        "loadStyle":"line.chat.cell.sendBubble",
+        "descriptionText.color":"#6495ED",
+        "descriptionText.shadow":{
+            "normal":"",
+            "offset":"0px 0px"
+        },
+        "durationText.color":"#6495ED",
+        "durationText.shadow":{
+            "normal":"",
+            "offset":"0px 0px"
+        },
+        "openButtonText.color":"#6495ED",
+        "openButtonText.shadow":{
+            "normal":"",
+            "offset":"0px 0px"
+        },
+        "border.image":"thumbnail_shadow_b.png",
+        "arrowIcon.image":"speech_bubble_app_icon_arrow.png"
+    },
+    "line.chat.messageInputBar":{
+        "image.background":"background_chat_send.png 1px 2px",
+        "image.input":"chat_input.png 11px 15px",
+        "icon.image.call":"icon_chat_call01.png",
+        "icon.image.voice":"icon_chat_voice01.png"
+    },
+    "line.chat.messageSendTypeSelectionView":{
+        "image.background.count.two":"bg_chat_bloon01.png 10px 0px",
+        "image.background.count.three":"bg_chat_bloon02.png 10px 0px",
+        "image.icon.checked":"icon_chat_bloon_check01.png",
+        "text.color":{
+            "normal":"#ffffff, 0.5",
+            "selected":"#ffffff"
+        },
+        "text.shadow":{
+            "normal":"#000000, 0.2",
+            "offset":"0px 1px"
+        },
+        "fontWeight":"bold"
+    },
+    "line.chat.attachButton":{
+        "background.image":{
+            "normal":"chat_btn_icon_04.png",
+            "pressed":"chat_btn_icon_05.png",
+            "selected":"chat_btn_icon_04.png"
+        },
+        "icon.image":{
+            "normal":"chat_btn_icon_01.png",
+            "pressed":"chat_btn_icon_01.png",
+            "selected":"chat_btn_icon_02.png"
+        }
+    },
+    "line.chat.emojiButton":{
+        "background.image":{
+            "normal":"chat_btn_icon_04.png",
+            "pressed":"chat_btn_icon_05.png",
+            "selected":"chat_btn_icon_04.png"
+        },
+        "icon.image":{
+            "normal":"chat_btn_icon_03.png",
+            "pressed":"chat_btn_icon_03.png",
+            "selected":"chat_btn_icon_02.png"
+        }
+    },
+    "line.chat.sendButton":{
+        "background.image":{
+            "normal":"btn_chat_send_01.png 13px 0px",
+            "pressed":"btn_chat_send_02.png 13px 0px",
+            "dimmed":"btn_chat_send_01.png 13px 0px"
+        },
+        "text.color":{
+            "normal":"#ffffff",
+            "dimmed":"#ffffff"
+        },
+        "text.shadow":{
+            "normal":"#6495ED,0.7",
+            "offset":"0px 0.5px"
+        },
+        "fontSize":13,
+        "fontWeight":"bold"
+    },
+    "line.chat.voiceTalk.background":{
+        "image":"voice_input_bg.png"
+    },
+    "line.chat.voiceTalk.message.talkButton":{
+        "text.shadow":{
+            "normal":"#6495ED,0.7",
+            "offset":"0px 1px"
+        },
+        "fontSize":12,
+        "fontWeight":"bold"
+    },
+    "line.chat.voiceTalk.voip.talkButton":{
+        "loadStyle":"line.chat.voiceTalk.message.talkButton",
+        "background.image":{
+            "normal":"voice_button.png 10px 34px",
+            "pressed":"voice_button_tap.png 10px 34px"
+        },
+        "text.color":{
+            "normal":"#ffffff",
+            "pressed":"#ffffff,0.6"
+        }
+    },
+    "line.chat.voiceTalk.message.talkButton.normal":{
+        "loadStyle":"line.chat.voiceTalk.message.talkButton",
+        "background.image":"voice_button.png 10px 34px",
+        "text.color":"#ffffff"
+    },
+    "line.chat.voiceTalk.message.talkButton.pressed":{
+        "loadStyle":"line.chat.voiceTalk.message.talkButton",
+        "background.image":"voice_button_tap.png 10px 34px",
+        "text.color":"#ffffff, 0.5"
+    },
+    "line.chat.voicetalk.closeButton":{
+        "background.image":{
+            "normal":"voice_X_button.png",
+            "pressed":"voice_X_button_tap.png"
+        }
+    },
+    "line.chat.spammerView":{
+        "background.image":"user_bg_board.png 0px, 0px",
+        "plus.icon.image":"spam_icon_add.png"
+    },
+    "line.chat.spammerView.button":{
+        "background.image":{
+            "normal":"btn_talk_01_board.png 5px, 0px",
+            "pressed":"btn_talk_01_board_tab.png 5px, 0px"
+        },
+        "text.color":"#ffffff",
+        "text.shadow":{
+            "normal":"#6495ED, 0.5",
+            "offset":"0px 1px"
+        },
+        "fontSize":12,
+        "fontWeight":"bold"
+    },
+    "line.chat.spammerView.label":{
+        "text.color":"#6495ED",
+        "text.shadow":{
+            "normal":"#ffffff, 1.0",
+            "offset":"0px 1px"
+        },
+        "fontSize":12,
+        "fontWeight":"bold"
+    },
+    "line.chat.spammerWarningView":{
+        "image":"bg_readpoint01.png 10px, 10px"
+    },
+    "line.chat.spammerWarningView.label":{
+        "text.color":"#6495ED",
+        "text.shadow":{
+            "normal":"#ffffff, 0.5",
+            "offset":"0px 1px"
+        },
+        "fontSize":12,
+        "fontWeight":"bold"
+    },
+    "line.chat.onAir":{
+        "image":"user_bg_board.png 0px, 0px",
+        "divide.image":"fanmeeting_line.png"
+    },
+    "line.chat.onAir.messageLabel":{
+        "text.color":"#6495ED",
+        "text.shadow":{
+            "normal":"#ffffff",
+            "offset":"0px 1px"
+        },
+        "fontSize":15,
+        "fontWeight":"bold"
+    },
+    "line.chat.onAir.titleLabel":{
+        "text.color":"#79BAEC",
+        "text.shadow":{
+            "normal":"#ffffff",
+            "offset":"0px 1px"
+        },
+        "fontSize":11
+    },
+    "line.chat.onAir.contentLabel":{
+        "text.color":"#79BAEC",
+        "text.shadow":{
+            "normal":"#ffffff",
+            "offset":"0px 1px"
+        },
+        "fontSize":13
+    },
+    "line.chat.menu.attachement":{
+        "pageControlBackground.image":"rolling_bg.png",
+        "pageControlIcon.image":{
+            "normal":"chatnavi_icon_03.png",
+            "selected":"chatnavi_icon_02.png"
+        },
+        "topMenuItemBackground.portrait.image":{
+            "normal":"c_menu_bg01.png",
+            "pressed":"c_menu_bg01_tab.png"
+        },
+        "bottomMenuItemBackground.portrait.image":{
+            "normal":"c_menu_bg04.png",
+            "pressed":"c_menu_bg04_tab.png"
+        },
+        "topMenuItemBackground.landscape.image":{
+            "normal":"y_menu_bg01.png",
+            "pressed":"y_menu_bg01_tab.png"
+        },
+        "bottomMenuItemBackground.landscape.image":{
+            "normal":"y_menu_bg04.png",
+            "pressed":"y_menu_bg04_tab.png"
+        }
+    },
+    "line.chat.menu.attachment.item":{
+        "menuItem01.image":"c_menu_icon02.png",
+        "menuItem02.image":"c_menu_icon01.png",
+        "menuItem03.image":"c_menu_icon03.png",
+        "menuItem04.image":"c_menu_icon04.png",
+        "menuItem05.image":"c_menu_icon05.png",
+        "menuItem06.image":"c_menu_icon06.png"
+    },
+    "line.chat.menu.attachment.item.title":{
+        "text.color":"#6495ED",
+        "text.shadow":{
+            "normal":"#ffffff",
+            "offset":"0px 1px"
+        },
+        "fontSize":11,
+        "fontWeight":"bold"
+    },
+    "line.chat.menu.attachment.notInstalledItem.title":{
+        "loadStyle":"line.chat.menu.attachment.item.title",
+        "text.color":"#6495ED,0.6"
+    },
+    "line.share.writeHome.background":{
+        "image":"bg_homewrite01.png 2px 0px"
+    },
+    "line.share.writeHome.button":{
+        "background.image":{
+            "normal":"btn_homewrite01.png 4px 5px",
+            "pressed":"btn_homewrite01_press.png 4px 5px"
+        },
+        "icon.image":"btn_icon_homewrite01.png",
+        "text.color":{
+            "normal":"#ffffff",
+            "dimmed":"#A0CFEC"
+        },
+        "text.shadow":{
+            "normal":"#6495ED,0.7",
+            "offset":"0px 1px"
+        },
+        "fontSize":14,
+        "fontWeight":"bold",
+        "image.edgeInsets":"0px -5px 0px 0px",
+        "icon.image":"btn_icon_homewrite01.png"
+    },
+    "myhome.navigationBar.menu.homeImage": {
+        "image" : "timeline/tm_top_menu_icon_home.png"
+    },
+    "myhome.navigationBar.menu.privacyImage": {
+        "image" : "timeline/tm_top_menu_icon_privacy.png"
+    },
+    "myhome.navigationBar.menu.guideImage": {
+        "image" : "timeline/tm_top_menu_icon_guide.png"
+    },
+    "myhome.navigationBar.menu.backgroundButton": {
+        "background.image" : {
+            "normal" : "timeline/tm_top_menu_btn.png 3px 0px",
+            "pressed" : "timeline/tm_top_menu_btn_pressed.png 3px 0px"
+        }
+    },
+    "myhome.navigationBar.menu.title": {
+        "text.color" : "#6495ED",
+        "text.shadow" : {
+            "normal" : "#ffffff,0.7",
+            "offset": "0px 1px"
+        },
+        "fontSize" : 11,
+        "fontWeight" : "bold"
+    },
+    "myhome.navigationBar.title.timelineButton": {
+        "icon.image" : {
+            "normal" : "timeline/tm_topbar_menu_cur.png",
+            "selected" : "timeline/tm_topbar_menu_cur_open.png"
+        },
+        "text.color":{
+            "normal":"#ffffff"
+        },
+        "text.shadow" : {
+            "normal" : "#000000,0.5",
+            "offset": "0px 1px"
+        },
+        "fontSize": 20,
+        "fontWeight" : "bold"
+    },
+    "myhome.navigationBar.title.likelistImage.portrait": {
+        "image" : "timeline/tm_end_like_more_img2.png"
+    },
+    "myhome.navigationBar.title.likelistImage.landscape": {
+        "image" : "timeline/tm_view_top_like.png"
+    },
+    "myhome.navigationBar.title": {
+        "text.color" : "#ffffff",
+        "text.shadow":{
+            "normal":"#6495ED,0.5",
+            "offset":"0px 1px"
+        },
+        "fontSize" : 20,
+        "fontWeight" : "bold"
+    },
+    "myhome.navigationBar.button.notification" : {
+        "icon.image" : {
+            "normal" : "timeline/line_header_icon04.png"
+        },
+        "background.image":{
+            "normal":"navigation_btn_02.png 15px 0px",
+            "pressed":"navigation_btn_02_tab.png 15px 0px"
+        },
+        "content.edgeInsets" : "2px 11px 0px 11px"
+    },
+    "myhome.navigationBar.badgeImage" : {
+        "image" : "timeline/top_number_noti.png 8px 0px"
+    },
+    "myhome.navigationBar.badgeTitle" : {
+        "fontSize" : 11,
+        "fontWeight" : "bold"
+    },
+    "myhome.navigationBar.button.write" : {
+        "icon.image" : {
+            "normal" : "timeline/tm_topbar_write_icon_new.png"
+        },
+        "background.image":{
+            "normal":"navigation_btn_02.png 15px 0px",
+            "pressed":"navigation_btn_02_tab.png 15px 0px"
+        },
+        "content.edgeInsets" : "-3px 3px -2px 6px"
+    },
+    "myhome.navigationBar.button.back" : {
+        "icon.image" : {
+            "normal" : "timeline/tm_btn_back_img.png"
+        },
+        "background.image" : {
+            "normal" : "timeline/tm_topbar_btn_back.png 14px 0px",
+            "pressed" : "timeline/tm_topbar_btn_back_pressed.png 14px 0px"
+        },
+        "content.edgeInsets" : "0px 9px 0px 11px"
+    },
+    "myhome.navigationBar.button.back.landscape" : {
+        "icon.image" : {
+            "normal" : "width_header_icon_01.png"
+        },
+        "background.image" : {
+            "normal" : "width_header_bt02.png 14px 0px",
+            "pressed" : "width_header_bt02_tap.png 14px 0px"
+        },
+        "content.edgeInsets" : "0px 10px 0px 10px"
+    },
+    "myhome.navigationBar.button.etc" : {
+        "icon.image" : {
+            "normal" : "timeline/tm_btn_more.png"
+        },
+        "background.image":{
+            "normal":"navigation_btn_02.png 15px 0px",
+            "pressed":"navigation_btn_02_tab.png 15px 0px"
+        },
+        "content.edgeInsets" : "2px 11px 0px 11px"
+    },
+    "myhome.navigationBar.button.addFriend" : {
+        "background.image" : {
+            "normal" : "groupboard/navigation_btn.png 15px 0px",
+            "pressed" : "groupboard/navigation_btn_tab.png 15px 0px"
+        },
+        "content.edgeInsets" : "0px 7px 0px 7px",
+        "text.color": {
+            "normal" : "#79BAEC",
+            "dimmed" : "#ffffff, 0.2"
+        },
+        "fontSize":12,
+        "fontWeight" : "bold"
+    },
+    "myhome.navigationBar.button.share" : {
+        "icon.image" : {
+            "normal" : "timeline/tm_topbar_share_icon.png"
+        },
+        "background.image" : {
+            "normal" : "timeline/tm_topbar_btn.png 15px 0px",
+            "pressed" : "timeline/tm_topbar_btn_pressed.png 15px 0px"
+        },
+        "content.edgeInsets" : "0px 12px 2px 10px"
+    },
+    "myhome.navigationBar.button.common" : {
+        "background.image":{
+            "normal":"navigation_btn_02.png 15px 0px",
+            "pressed":"navigation_btn_02_tab.png 15px 0px"
+        },
+        "content.edgeInsets" : "0px 11px 0px 11px",
+        "text.color": {
+            "normal" : "#ffffff",
+            "pressed" : "#ffffff, 0.7",
+            "selected" : "#ffffff, 0.7",
+            "dimmed" : "#ffffff, 0.7"
+        },
+        "text.shadow" : {
+            "normal" : "#000000, 0.2",
+            "offset":"0px 1px"
+        },
+        "fontSize":12,
+        "fontWeight" : "bold"
+    },
+    "myhome.navigationBar.homeicon" : {
+        "image" : "timeline/tm_topbar_btn_home.png"
+    },
+    "myhome.tableview": {
+        "background.image": "timeline/tm_bg.png"
+    },
+    "myhome.tableview.loading.indicator": {
+        "loadingIndicator.color" : "#79BAEC",
+        "loadingIndicatorType":"gray"
+    },
+    "myhome.tableview.loading.updateMessageLabel": {
+        "text.color" : "#79BAEC",
+        "text.shadow" : {
+            "normal" : "#ffffff, 0.5",
+            "offset":"0px 1px"
+        },
+        "fontSize" : 13,
+        "fontWeight" : "bold"
+    },
+    "myhome.tableview.loading.updateDateLabel": {
+        "text.color" : "#79BAEC",
+        "text.shadow" : {
+            "normal" : "#ffffff, 0.5",
+            "offset":"0px 1px"
+        },
+        "fontSize" : 10
+    },
+    "myhome.tableview.cell": {
+        "image": "timeline/tm_table_bg.png 11px 11px"
+    },
+    "myhome.tableview.cell.header.label": {
+        "text.color" : "#79BAEC",
+        "text.shadow" : {
+            "normal" : "#ffffff, 0.8",
+            "offset":"0px 1px"
+        },
+        "fontSize" : 12,
+        "fontWeight" : "bold"
+    },
+    "myhome.tableview.cell.header.nicknameButton": {
+        "text.color" : {
+            "normal" : "#79BAEC"
+        },
+        "text.shadow" : {
+            "normal" : "#ffffff, 0.8",
+            "offset":"0px 1px"
+        },
+        "fontSize" : 12,
+        "fontWeight" : "bold"
+    },
+    "myhome.tableview.cell.nodataImage": {
+        "image":"timeline/tm_error_ico_1.png"
+    },
+    "myhome.tableview.cell.nodataLabel": {
+        "text.color" : "#79BAEC",
+        "text.shadow" : {
+            "normal" : "#ffffff",
+            "offset":"0px 1px"
+        },
+        "fontSize" : 15
+    },
+    "myhome.tableview.cell.myhomePostButton":{
+        "icon.image":{
+            "normal":"btn_icon_homewrite01.png"
+        },
+        "background.image" : {
+            "normal" : "timeline/tm_btn_go_more_normal.png 6px 0px",
+            "pressed" : "timeline/tm_btn_go_more_pressed.png 6px 0px"
+        },
+        "text.color":"#ffffff",
+        "text.shadow":{
+            "normal":"#6495ED,0.5",
+            "offset":"0px 1px"
+        },
+        "fontSize":14,
+        "fontWeight":"bold",
+        "content.edgeInsets" : "7px 2px 7px 8px"
+    },
+    "myhome.tableview.cell.footer.title": {
+        "text.color" : {
+            "normal" : "#79BAEC"
+        }
+    },
+    "myhome.tableview.cell.officialProfile.backgroundImage":{
+        "image" : "timeline/hlist_noti_bg.png 12px 25px"
+    },
+    "myhome.tableview.cell.officialProfile.arrowImage":{
+        "image" : "timeline/hlist_noti_arrow.png"
+    },
+    "myhome.tableview.cell.officialProfile.descLabel":{
+        "text.color":"#79BAEC",
+        "fontSize":12
+    },
+    "myhome.tableview.cell.footer.dotImage": {
+        "image" : "timeline/tm_feed_pimg.png"
+    },
+    "myhome.tableview.cell.footer.backgroundImage": {
+        "image": "timeline/tm_table_bg2.png 11px 11px"
+    },
+    "myhome.tableview.cell.footer.shadowImage": {
+        "image" : "timeline/tm_commentbg_cornershadow.png 1px 0px"
+    },
+    "myhome.tableview.cell.footer.shadowImageView": {
+        "image" : "timeline/tm_commentbg_cornershadow.png 1px 0px"
+    },
+    "myhome.tableview.cell.footer.likeButton": {
+        "icon.image" : {
+            "normal" : "timeline/tm_icon_like.png",
+            "selected" : "timeline/tm_icon_like_on.png"
+        },
+        "text.color":{
+            "normal":"#79BAEC"
+        }
+    },
+    "myhome.tableview.cell.footer.commentButton": {
+        "icon.image" : {
+            "normal" : "timeline/tm_icon_comment.png"
+        },
+        "text.color":{
+            "normal":"#79BAEC"
+        }
+    },
+    "myhome.tableview.cell.footer.likelistLabel": {
+        "text.color" : "#79BAEC"
+    },
+    "myhome.tableview.cell.footer.likelistButton": {
+        "icon.image" : {
+            "normal" : "timeline/tm_icon_more_normal.png"
+        }
+    },
+    "groupboard.navigationBar.title.cafeName": {
+        "text.color" : "#ffffff",
+        "text.shadow":{
+            "normal":"#6495ED, 0.5",
+            "offset":"0px 1px"
+        },
+        "fontSize" : 20,
+        "fontWeight" : "bold",
+        "textAlignment":"center"
+    },
+    "groupboard.navigationBar.title.likeUserName": {
+        "text.color" : "#ffffff",
+        "text.shadow":{
+            "normal":"#6495ED, 0.5",
+            "offset":"0px 1px"
+        },
+        "fontSize" : 20,
+        "fontWeight" : "bold",
+        "textAlignment":"left"
+    },
+    "groupboard.navigationBar.title.boardName": {
+        "text.color" : "#ffffff",
+        "text.shadow":{
+            "normal":"#6495ED, 0.5",
+            "offset":"0px 1px"
+        },
+        "fontSize" : 13,
+        "fontWeight" : "bold",
+        "textAlignment":"center"
+    },
+    "groupboard.navigationBar.button.action" : {
+        "background.image" : {
+            "normal" : "groupboard/navigation_btn_02.png 15px 0px",
+            "pressed" : "groupboard/navigation_btn_02_02.png 15px 0px",
+            "selected" : "groupboard/navigation_btn_02_02.png 15px 0px"
+        },
+        "text.color":{
+            "normal":"#ffffff"
+        },
+        "text.shadow":{
+            "normal":"#000000, 0.2",
+            "offset":"0px 1px"
+        },
+        "fontSize":12,
+        "fontWeight":"bold",
+        "content.edgeInsets" : "0px 10px 0px 10px"
+    },
+    "groupboard.navigationBar.button.back" : {
+        "background.image" : {
+            "normal" : "groupboard/navigation_btn_04.png 15px 0px",
+            "pressed" : "groupboard/navigation_btn_04_press.png 15px 0px"
+        },
+        "icon.image" : {
+            "normal" : "groupboard/navigation_btn_icon_01.png"
+        },
+        "content.edgeInsets" : "0px 13px 0px 11px"
+    },
+    "groupboard.navigationBar.button.writeDone" : {
+        "background.image" : {
+            "normal" : "groupboard/navigation_btn_02_activate.png 15px 0px",
+            "pressed" : "groupboard/navigation_btn_02_01.png 15px 0px",
+            "dimmed" : "groupboard/navigation_btn_02.png 15px 0px"
+        },
+        "text.color":{
+            "normal" : "#56A5EC",
+            "pressed" : "#56A5EC",
+            "dimmed" : "#ffffff"
+        },
+        "text.shadow":{
+            "normal" : "#ffffff, 0.2",
+            "pressed" : "#000000, 0.2",
+            "dimmed" : "#000000, 0.2",
+            "offset" : "0px 1px"
+        },
+        "fontSize":12,
+        "fontWeight":"bold",
+        "content.edgeInsets" : "0px 10px 0px 10px"
+    },
+    "groupboard.navigationBar.button.otherActions" : {
+        "background.image" : {
+            "normal" : "groupboard/navigation_btn_02.png 15px 0px",
+            "pressed" : "groupboard/navigation_btn_02_02.png 15px 0px"
+        },
+        "icon.image" : {
+            "normal" : "groupboard/navigation_btn_icon_06.png"
+        },
+        "content.edgeInsets" : "-1px 1px 0px -1px"
+    },
+    "groupboard.navigationBar.button.multiBack.back" : {
+        "background.image" : {
+            "normal" : "groupboard/navigation_btn_05.png 13px 0px",
+            "pressed" : "groupboard/navigation_btn_05_press.png 13px 0px",
+            "selected" : "groupboard/navigation_btn_05_press.png 13px 0px"
+        },
+        "icon.image" : {
+            "normal" : "groupboard/navigation_btn_icon_01.png"
+        },
+        "content.edgeInsets" : "0px 13px 0px 11px"
+    },
+    "groupboard.navigationBar.button.multiBack.close" : {
+        "background.image" : {
+            "normal" : "groupboard/navigation_btn_03_01_default.png 15px 0px",
+            "pressed" : "groupboard/navigation_btn_03_01_select.png 15px 0px",
+            "dimmed" : "groupboard/navigation_btn_03_01_select.png 15px 0px"
+        },
+        "text.color":{
+            "normal" : "#ffffff"
+        },
+        "text.shadow":{
+            "normal" : "#000000, 0.2",
+            "offset" : "0px 1px"
+        },
+        "fontSize":12,
+        "fontWeight":"bold",
+        "content.edgeInsets" : "0px 12px 0px 10px"
+    },
+    "groupboard.navigationBar.button.multiBack.list" : {
+        "background.image" : {
+            "normal" : "groupboard/navigation_btn_03_02_default.png 2px 0px",
+            "pressed" : "groupboard/navigation_btn_03_02_select.png 2px 0px",
+            "selected" : "groupboard/navigation_btn_03_02_select.png 2px 0px"
+        },
+        "icon.image" : {
+            "normal" : "groupboard/navigation_btn_icon_02.png"
+        },
+        "content.edgeInsets" : "0px 10px 0px 10px"
+    },
+    "groupboard.navigationBar.button.multiAction.backward" : {
+        "background.image" : {
+            "normal" : "groupboard/navigation_btn_03_01_default.png 15x 0px",
+            "pressed" : "groupboard/navigation_btn_03_01_select.png 15px 0px",
+            "dimmed" : "groupboard/navigation_btn_03_01_select.png 15px 0px"
+        },
+        "icon.image" : {
+            "normal" : "groupboard/navigation_btn_icon_03_left.png",
+            "pressed" : "groupboard/navigation_btn_icon_03_left_select.png",
+            "dimmed" : "groupboard/navigation_btn_icon_03_left_select.png"
+        },
+        "content.edgeInsets" : "1px 0px 0px 0px"
+    },
+    "groupboard.navigationBar.button.multiAction.forward" : {
+        "background.image" : {
+            "normal" : "groupboard/navigation_btn_03_02_default.png 1px 0px",
+            "pressed" : "groupboard/navigation_btn_03_02_select.png 1px 0px",
+            "dimmed" : "groupboard/navigation_btn_03_02_select.png 1px 0px"
+        },
+        "icon.image" : {
+            "normal" : "groupboard/navigation_btn_icon_03_right.png",
+            "pressed" : "groupboard/navigation_btn_icon_03_right_select.png",
+            "dimmed" : "groupboard/navigation_btn_icon_03_right_select.png"
+        },
+        "content.edgeInsets" : "1px 0px 0px 0px"
+    }
+}
